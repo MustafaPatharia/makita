@@ -1,0 +1,329 @@
+
+@font-face {
+  font-family: AntonRegular;
+  src: url('/assests/fonts/Anton-Regular.ttf');
+}
+@font-face {
+  font-family: AsphalticGrainCondensed;
+  src: url('/assests/fonts/Asphaltic-Grain-Condensed.ttf');
+}
+@font-face {
+  font-family: BebasNeueBold;
+  src: url('/assests/fonts/BebasNeue-Bold.ttf');
+}
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url('/assests/fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+  font-family: GothamBold;
+  src: url('/assests/fonts/Gotham-Bold.otf');
+}
+@font-face {
+  font-family: HelvCondensed;
+  src: url('/assests/fonts/HelvCondensed-Normal.otf');
+}
+
+:root {
+  --global-font-family: BebasNeue-Regular;
+  --global-color-cyan: #008F9F;
+  --global-color-red: #E50019;
+  --global-color-gray: #484848;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0px;
+  padding: 0px
+}
+body {
+    margin: 0;
+    font-family: BebasNeueRegular;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1640px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.d-none{
+  display: none;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+  padding: 10px;
+}
+
+.m-auto{
+  margin:auto
+}
+/********************** Header *****************************************/
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--global-color-gray);
+}
+.navbar .links{
+  display: flex;
+  background-color: var(--global-color-cyan);
+  flex-grow: 2;
+  justify-content: space-around;
+}
+
+.navbar .links a {
+  font-family: Anton;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px; 
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.logo{
+  height:40px;
+  margin-right: 22px
+}
+
+.primary-btn {
+  align-items: center;
+  background-color: var(--global-color-red);
+  cursor: pointer;
+  border: none;
+
+}
+.nav-primary-btn-wrapper{
+  margin: 10px 18px;
+}
+
+.primary-btn p{
+  font-family: AntonRegular;
+  font-size: 27px!important ;
+  color: white;
+  margin:0 4px;
+}
+
+.primary-btn-img{
+  height: 25px!important;
+  margin: 0 4px;
+}
+
+.search-icon{
+  height: 30px
+}
+
+/********************** Banner *****************************************/
+
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  height: calc(100vh - 80px);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 50%;
+}
+
+.text h1{
+  font-family: AsphalticGrainCondensed;
+  font-size: 225px;
+  line-height: 1;
+  margin-top:100px
+}
+.text p{
+  font-size: 39px ;
+}
+.text .primary-btn{
+  margin-top:16px
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots-wrapper{
+  bottom:20px;
+  right:50%;
+  z-index: 1;
+}
+
+.active, .dot:hover {
+  background-color: var(--global-color-cyan);
+
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/******************************** Feature Product *************************************/
+.section-heading{
+  color: var(--global-color-red);
+  font-size: 150px;
+  font-family: AsphalticGrainCondensed;
+  text-align: center;
+}
+.category-img-content{
+  bottom: 20px;
+  color: white;
+  padding: 35px;
+}
+.category-img-content .primary-btn{
+  margin-top:16px
+}
+.category-title{
+  font-size: 54px;
+  font-family: Anton;
+}
+.category-description{
+  font-size: 17px;
+}
+.category-product-details{
+  padding: 8px 12px;
+  background-color: #F0F0F0;
+}
+.category-product-details .primary-btn{
+  margin-right: 8px;
+  margin-top: 8px;
+}
+.category-product-description{
+  margin: 10px 0;
+}
+.category-product-details .primary-btn p{
+  font-size: 16px!important
+}
+.category-product-details .primary-btn img{
+  height: 19px!important
+}
+.category-product-title{
+  color: var(--global-color-cyan);
+  font-size:29px;
+  font-family: Anton;
+}
+.category-product-subtitle{
+  color: #484848;
+  font-size:19px;
+  font-family: Anton;
+}
+.category-content-item-img{
+  width: 100%;
+}
+
+.product-feed-item{
+  text-align: center;
+  margin-top: 10px;;
+}
+.product-feed-item-img{
+  width: 100%;
+}
+
+.product-title{
+  font-size: 30px;
+  color: var(--global-color-cyan);
+  font-family: Anton;
+}
+.product-description{
+  font-size: 29px;
+  margin: 12px 0;
+}
+.pomo-banner-title{
+  text-align: center;
+  font-family: AsphalticGrainCondensed;
+  font-size: 196px;
+  color: white;
+  padding: 20px 150px;
+}
+.promo-banner{
+  height: 526px;
+  margin:50px auto;
+  justify-content: center;
+  align-items: center;
+}

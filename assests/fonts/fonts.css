@@ -1,0 +1,24 @@
+@font-face {
+    font-family: AntonRegular;
+    src: url('/assests/fonts/Anton-Regular.ttf');
+  }
+@font-face {
+    font-family: AsphalticGrainCondensed;
+    src: url(AsphalticGrain\ Condensed.ttf);
+  }
+@font-face {
+    font-family: BebasNeueBold;
+    src: url(BebasNeue-Bold.ttf);
+  }
+@font-face {
+    font-family: BebasNeueRegular;
+    src: url(BebasNeue-Regular.ttf);
+  }
+@font-face {
+    font-family: GothamBold;
+    src: url(Gotham-Bold.otf);
+  }
+@font-face {
+    font-family: HelvCondensed;
+    src: url(HelvCondensed-Normal.otf);
+  }

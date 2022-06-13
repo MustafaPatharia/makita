@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assests/css/style.css">
+        <script src="/assests/js/script.js"></script>
+        <script src="/assests/js/components/Header.js" type="text/javascript" defer></script>
+        <script src="/assests/js/components/Banner.js" type="text/javascript" defer></script>
+        <script src="/assests/js/components/CategoryContent.js" type="text/javascript" defer></script>
+        <script src="/assests/js/components/CategoryPrductFeed.js" type="text/javascript" defer></script>
+        <script src="/assests/js/components/ProductFeed.js" type="text/javascript" defer></script>
+        <script src="/assests/js/components/PromotionalBanner.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header-component></header-component>
+
+        <!-- banner -->
+        <banner-component></banner-component>
+        
+        <!-- Category -->
+        <section id="category" class="container">
+            <h2 class="section-heading">CORDLESS SYSTEM</h2>
+            <div id="category-content" class="grid-container-3">
+            </div>
+            <div id="category-product-feed" class="grid-container-3">
+            </div>
+        </section>
+        <promotional-banner promoImage="/assests/images/promo-banner-1.png" title="A NEW SYSTEM OF
+        EQUIPMENT & TOOLS" ></promotional-banner>
+        <section id="product" class="container">
+            <h2 class="section-heading">FEATURE PRODUCT</h2>
+            <div id="product-feed" class="grid-container-4">
+            </div>
+        </section>
+        <promotional-banner promoImage="/assests/images/promo-banner-2.png" title="WORLD’S LARGEST COMPATIBLE
+        POWER TOOLS" ></promotional-banner>
+        <section id="product" class="container">
+            <h2 class="section-heading">NEW ARRIVAL</h2>
+            <div id="new-arrival-feed" class="grid-container-4">
+            </div>
+        </section>       
+    </body>
+</html>
