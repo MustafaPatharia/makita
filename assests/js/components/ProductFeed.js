@@ -48,10 +48,10 @@ const products = [
   
   products.map((item) => {
     myHTML += `
-      <div class="grid-item -product-feed-item">
-          <img class="-product-item-img" src="${item.image}" >
-            <h4 class="-product-title">${item.title}</h4>
-            <p class="-product-description">${item.description}</p>
+      <div class="grid-item product-feed-item">
+          <img class="product-item-img" src="${item.image}" >
+            <h4 class="product-title">${item.title}</h4>
+            <p class="product-description">${item.description}</p>
             <button class="primary-btn flex m-auto">
                 <p>
                     PRODUCT DETAILS
