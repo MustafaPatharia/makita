@@ -22,7 +22,7 @@ var myHTML = '';
 category.map((item) => {
   myHTML += `
     <div class="grid-item relative category-content-item">
-        <div style="padding:15px">
+        <div >
         <img class="category-content-item-img" src="${item.image}" >
         <div class="absolute category-img-content">
           <h3 class="category-title">${item.title}</h3>

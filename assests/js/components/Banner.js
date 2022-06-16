@@ -30,7 +30,8 @@ class Banner extends HTMLElement {
         
             <div class="mySlides fade">
                 <img class="mySlides-img"  src="/assests//images//banner-2.png" style="width:100%">
-                <div class="container">
+                <div class="absolute" style="top:0; width: 100%">
+                <div class="container flex" style="justify-content: space-between">
                     <div class="text">
                         <h1>
                             ENERGIZE <br> THE GRID
@@ -47,12 +48,15 @@ class Banner extends HTMLElement {
                             <img class="primary-btn-img" src="/assests/images/know-more.svg" >
                         </button>
                     </div>
+                    <banner-widget></banner-widget>
                 </div>
+            </div>
             </div>
         
             <div class="mySlides fade">
                 <img class="mySlides-img" src="/assests/images/banner-3.png" style="width:100%">
-                <div class="container">
+                <div class="absolute" style="top:0; width: 100%">
+                <div class="container flex" style="justify-content: space-between">
                     <div class="text">
                         <h1>
                             ENERGIZE <br> THE GRID
@@ -69,7 +73,9 @@ class Banner extends HTMLElement {
                             <img class="primary-btn-img" src="/assests/images/know-more.svg" >
                         </button>
                     </div>
+                    <banner-widget></banner-widget>
                 </div>
+            </div>
             </div>
             
         </div>
