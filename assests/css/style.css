@@ -38,6 +38,7 @@ body {
     margin: 0;
     font-family: BebasNeueRegular;
     overflow-x: hidden;
+    font-size: 29px;
   }
   
   .container {
@@ -70,6 +71,7 @@ body {
 .grid-container-4 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  grid-gap: 18px;
 }
 .grid-item {
   padding: 10px;
@@ -99,7 +101,9 @@ body {
   text-decoration: none;
   font-size: 25px;
 }
-
+.navbar .links a:hover{
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
@@ -160,10 +164,15 @@ body {
 
 .mySlides {
   display: none;
+  margin-bottom: 40px;
+  position: relative;
+  max-height: calc(100vh - 80px);
+  overflow: hidden;
 }
 
-.mySlides img{
-  height: calc(100vh - 80px);
+.mySlides-img{
+ max-height: calc(100vh - 80px);
+ min-height: calc(100vh - 80px);
 }
 
 .prev, .next {
@@ -193,8 +202,6 @@ body {
 .text {
   color: #f2f2f2;
   padding: 8px 12px;
-  position: absolute;
-  top: 8px;
   width: 50%;
 }
 
@@ -250,6 +257,7 @@ body {
   font-size: 150px;
   font-family: AsphalticGrainCondensed;
   text-align: center;
+  margin-bottom: 50px;
 }
 .category-img-content{
   bottom: 20px;
@@ -267,7 +275,7 @@ body {
   font-size: 17px;
 }
 .category-product-details{
-  padding: 8px 12px;
+  padding: 16px 12px;
   background-color: #F0F0F0;
 }
 .category-product-details .primary-btn{
@@ -276,6 +284,8 @@ body {
 }
 .category-product-description{
   margin: 10px 0;
+  overflow:hidden;
+  max-height: 70px;
 }
 .category-product-details .primary-btn p{
   font-size: 16px!important
@@ -300,9 +310,11 @@ body {
 .product-feed-item{
   text-align: center;
   margin-top: 10px;;
+  background-color: #FCFAFA;
+  padding:15px 0 30px 0;
 }
 .product-feed-item-img{
-  width: 100%;
+  width: 350px
 }
 
 .product-title{
@@ -311,7 +323,6 @@ body {
   font-family: Anton;
 }
 .product-description{
-  font-size: 29px;
   margin: 12px 0;
 }
 .pomo-banner-title{
@@ -326,4 +337,132 @@ body {
   margin:50px auto;
   justify-content: center;
   align-items: center;
+}
+footer{
+  background-color: #1D1D1D;
+  color: white;
+  margin-top: 80px;
+}
+
+.social-section{
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid-container-3-footer-links{
+  display: grid;
+  grid-template-columns: 425px 330px 330px;
+}
+.social-icons{
+  padding: 0 77px;
+  width: -webkit-fill-available;
+  justify-content: space-evenly;
+}
+.social-icons img{
+  height: 45px;
+  border: solid 3px;
+  border-radius: 50%;
+}
+.social-icons img:hover{
+  border-color: var(--global-color-red);
+  background-color: var(--global-color-red);
+  cursor: pointer;
+}
+
+.footer-logo-section{
+  justify-content: center;
+  padding: 150px 0;
+}
+input[name="email"]{
+  margin:20px 0;
+  padding: 10px 15px;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.footer-logo{
+  height: 88px;
+}
+
+.footer-links-section{
+  background-color: #05080D;
+  padding: 60px;
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+}
+
+.ofiice-locations{
+  text-decoration: underline;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+.ofiice-locations h6{
+  font-size: 29px;
+}
+.ofiice-locations p{
+  font-size: 23px;
+  margin-left: 24px;
+}
+.contact-us-details{
+  margin-top: 12px;
+}
+.contact-us-details img{
+  height: 23px;
+}
+.contact-us-detail-p{
+  margin-left: 20px;
+}
+.footer-menu-links{
+  text-decoration: underline;
+  border-left: solid 3px white;
+  padding: 60px;
+}
+.footer-menu-links p:hover, .ofiice-locations p:hover{
+  color: var(--global-color-red);
+  text-decoration: underline;
+  text-decoration-color: var(--global-color-red);
+  cursor: pointer;
+}
+.banner-widget{
+  width: 416px;
+  min-height: calc(100vh - 80px);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px
+}
+.banner-widget-item-img-wrapper{
+  height: 145px;
+  overflow: hidden;
+}
+.banner-widget-item-img-wrapper img{
+  display: block;
+  width: 100%;
+}
+.banner-widget-item-content{
+  background-color: var(--global-color-cyan);
+  margin:-35px 0 0 0;
+  padding: 0 0 15px 0;;
+}
+
+.banner-widget-item-content h5{
+  font-family: Anton;
+  font-size: 52px;
+  color:white;
+  -webkit-text-stroke: 1px var(--global-color-cyan);
+}
+.banner-widget-item-content p{
+  font-family: GothamBold;
+  font-size: 13px;
+  color: white;
+}
+.banner-widget-item:hover .banner-widget-item-content h5{
+  -webkit-text-stroke: 1px var(--global-color-red);
+}
+.banner-widget-item:hover .banner-widget-item-content{
+  background-color: var(--global-color-red);
 }
